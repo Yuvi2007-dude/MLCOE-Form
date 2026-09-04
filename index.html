@@ -4,79 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MLCOE Registration </title>
+    <title> MLCOE Registration | The Turing Test '26</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="main">
+    <nav class="navbar">
+        <div class="nav-logo"> 
+            <img src="logo_MLCOE.png" alt="MLCOE Logo" class="logo-img">
+            <span> MLCOE </span>
+        </div>
+    </nav>
 
-        <div CLASS="LEFT">
+    <main class="main-container"> 
+
+        <section class="left-panel">
+            <p class="small-heading"> PRESENTS </p>
             <h1> THE <BR> TURING TEST <BR> '26</h1>
-            <P> Where Human Integrity Meets Machine Logic </P>
-            <diV CLASS="MACHINE LEARNING"> MACHINE LEARNING
+            <P class="subtitle"> Where Human Integrity Meets Machine Logic </P>
+
+            <diV CLASS="domain-info"> 
+                <strong>MACHINE LEARNING</strong>
                 <P> GEN AI.AGENTIC AI</P>
             </diV>
-            <diV CLASS="WEB DEVELOPMENT"> WEB DEVELOPMENT
+            <diV CLASS="domain-info">
+                <strong>WEB DEVELOPMENT</strong> 
                 <P> FRONTEND . BACKEND</P>
             </diV>
-            <diV CLASS="DESIGNING"> DESIGNING
+            <diV CLASS="domain-info">
+                <strong>DESIGNING</strong>
                 <P> UI.MOTION</P>
             </diV>
 
-            <diV CLASS="DATE.TIME'">
-                <DIV CLASS="DATE">DATE
+            <diV CLASS="event-details">
+                <DIV CLASS="Detail">
+                    <strong>DATE</strong>
                     <P> 2 SEPTEMVER 2026</P>
                 </DIV>
-                <DIV CLASS="TIME">TIME
+                <DIV CLASS="detail">
+                    <strong>TIME</strong>
                     <P> 5:00 PM</P>
                 </DIV>
-                <DIV CLASS="VENUE">VENUE
+                <DIV CLASS="detail">
+                    <strong>VENUE</strong>
                     <P> CSE LABS, 4TH FLOOR CSIT</P>
                 </DIV>
             </diV>
+        </section >
 
-        </div>
-        <div>
-            <div CLASS="HEADER">
-                <h1>MLCOE Recruitment Registration Page</h1>
+            <section class=right-panel;> 
+        <div class="form-header">
+                <h2>MLCOE Recruitment Registration </h2>
                 <p> Initiate Your Sequence to join the Machine Learning Center Of Excellence </p>
             </div>
-            <div CLASS="FORM">
-                <form>
-                    <div class="form-grp1"> 
+
+            <Form action="#" method="post" class="registration-form">
+
+                    <div class="input-row"> 
+                        <div class="input-group"> 
                     <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required placeholder="Jonathan Doe">
-                    <br><br>
-                    <label for="student-number">Student Number:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Jonathan Doe">
+                    </div>
+                    <div class="input-group"> 
+                    <label for="student-number">Student Number</label>
                     <input type="text" id="student-number" name="student-number" required placeholder="123456789">
-                    <br><br>
                     </div>
-                    <div class="form-grp2"> 
-                    <label for="Roll number"> Roll Number:</label>
-                    <input type="text" id="roll number" name="roll number" required placeholder="123456789">
-                    <br><br>
-                    <label for="email"> College Email:</label>
-                    <input type="email" id="email" name="email" required placeholder="john@gmail.com">
-                    <br><br>
-                    </div>
-                    <div class="form-grp3" > 
-                    <label for="Phone Number">Phone Number:</label>
-                    <input type="text" id="Phone Number" name="Phone Number" required placeholder="123-456-7890">
-                    <br><br>
-                    <label for="Gender"> Gender:</label>
-                    <radio id="Gender" name="Gender" required>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
-                    </select>
                     </div>
 
-                   
-                    <label for="Date Of Birth"> Date Of Birth:</label>
-                    <input type="date" id="Date Of Birth" name="Date Of Birth" required>
-                    <!-- <br><br> -->
-                    <label for="Branch"> Branch:</label>
+                    <div class="input-row"> 
+                        <div class="input-group"> 
+                    <label for="Roll number"> Roll Number:</label>
+                    <input type="text" id="roll number" name="roll number" required placeholder="123456789">
+                    </div>
+                    <div class="input-row"> 
+                        <div class="input-group">
+                    <label for="email"> College Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="john@gmail.com">
+                    </div>
+                    </div>
+
+                    <div class="input-row" > 
+                        <div class="input-group"> 
+                    <label for="Phone Number">Phone Number:</label>
+                    <input type="text" id="Phone Number" name="Phone Number" required placeholder="123-456-7890">
+                    </div>
+                    <div class="input-group"> 
+                    <label> Gender</label>
+                    <div class="radio-group">
+                        <input type="radio" id="gender-male" name="gender" value="Male" required>
+                        <label for="gender-male" class="radio-box"> Male</label>
+
+                        <input type="radio" id="gender-female" name="gender" value="Female" required>
+                        <label for="gender-female" class="radio-box"> Female</label>
+                    </div>
+                </div>
+                    </div>
+
+                   <div class="input-row three-col"> 
+                    <div class="input-group"> 
+                    <label for="dob"> Date Of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="input-group">
+                    <label for="Branch"> Branch </label>
                     <select id="branch" name="branch" required>
                         <option value="CSE"> CSE</option>
                         <option value="CSE-DS"> CSE-DS</option>
@@ -89,31 +120,48 @@
                         <option value="CIVIL"> CIVIL</option>
                         <option value="MECHANICAL"> MECHANICAL</option>
                     </select>
-                    <label for="RESIDECE"> RESIDECE:</label>
+                    </div>
+                    <div class="input-group"> 
+                    <label for="RESIDECE"> RESIDECE</label>
                     <select id="RESIDECE" name="RESIDECE" required>
                         <option value="Hosteller"> Hosteller</option>
                         <option value="Day Scholar"> Day Scholar</option>
                     </select>
-                    <br><br>
-                    <label for="Domain Applying For">Domain Applying For </label>
-                    <input type="radio" id="Machine-Learning" name="Domain Applying For" value="Machine-learning">
-                    <label for="Machine-Learning">Machine Learning</label>
-                    <input type="radio" id="Data-Science" name="Domain Applying For" value="Data-Science">
-                    <label for="Data-Science">Data Science</label>
-                    <input type="radio" id="Designing" name="Domain Applying For" value="Designing">
-                    <label for="Designing">Designing</label>
+                    </div>
+                    </div>
 
+                    <div class="domain-selection-group"> 
+                        <p> Domain Applying For </p>
+                    <input type="radio-group" id="domain-ml" name="domain " value="Machine-learning " required>
+                    <label for="domain-ml" class="radio-box">Machine Learning</label>
 
+                    <input type="radio" id="domain-webdev" name="domain " value="web-development">
+                    <label for="domain-webdev" class="radio-box">Web Development</label>
 
-                    <input type="submit" value="Register">
-                    
+                    <input type="radio" id="domain-design" name="domain " value="Designing">
+                    <label for="domain-design" class="radio-box">Designing</label>
+                    </div>
+                    </div>
+
+                    <div class="declaration-group" >
+                        <input type="checkbox" id="declaration" name="dclaration" required>
+                        <label for="declaration">I hereby declare that all the information provided above is true to the best of my knowledge I agree to abide by the rules and regulations of MLCOE.</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn"> Register Now </button>
+                    <p class="system-status"> System Ready | Initiating Proxy | Security: Encrypted </p>
                 </form>
-            </div>
-        </div>
-    </div>
+            </section>
+            </main>
 
-
-
+            <footer class=" page-footer">
+                <p class="footer-title"> MLCOE NEURAL ENGINE</p>
+                <div class="footer-links">
+                    <span > ETHICS PROTOCOL</span>
+                    <span > NEURAL PRIVACY</span>
+                    <span > SYSTEM LOGS</span>
+                </div>
+                <P class="copyright"> &copy; 2026 MLCOE. Advancing human potential through machine logic. All sequences are logged for verification. </P>
+            </footer>
 </body>
-
 </html>
